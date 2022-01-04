@@ -46,12 +46,21 @@ application {
     mainClass.set("PZN_05KotlinGradle.AppKt")
 }
 
-//task ini dijalnkan dengan gradele HelloRoy di terminal
-tasks.register("HelloRoy") {
+//task ini dijalnkan dengan gradele helloRoy di terminal
+tasks.register("helloRoy") {
     doFirst{
         println("Hello")
     }
     doLast{
         println("Roynaldi")
+    }
+}
+
+tasks.register("author") {
+    val author:String by project
+
+    doLast{
+        println("Author ${author}")
+
     }
 }
