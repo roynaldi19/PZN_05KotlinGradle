@@ -45,3 +45,13 @@ application {
     // Define the main class for the application.
     mainClass.set("PZN_05KotlinGradle.AppKt")
 }
+
+//task ini dijalnkan dengan gradele HelloRoy di terminal
+tasks.register("HelloRoy") {
+    doFirst{
+        println("Hello")
+    }
+    doLast{
+        println("Roynaldi")
+    }
+}
