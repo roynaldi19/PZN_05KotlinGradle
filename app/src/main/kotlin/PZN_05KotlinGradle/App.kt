@@ -3,6 +3,8 @@
  */
 package PZN_05KotlinGradle
 
+import
+
 class App {
     val greeting: String
         get() {
@@ -12,4 +14,6 @@ class App {
 
 fun main() {
     println(App().greeting)
+
+
 }

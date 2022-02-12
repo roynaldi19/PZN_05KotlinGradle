@@ -5,10 +5,7 @@
  *
  * Detailed information about configuring a multi-project build in Gradle can be found
  * in the user manual at https://docs.gradle.org/7.3.3/userguide/multi_project_builds.html
- * This project uses @Incubating APIs which are subject to change.
  */
 
-rootProject.name = "PZN_05KotlinGradle"
-include("app")
-include("model")
-include("util")
+rootProject.name = "util"
+include("lib")
